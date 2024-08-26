@@ -1,22 +1,140 @@
-@import url("styles/header.css");
-@import url("styles/banner.css");
-@import url("styles/carrossel.css");
-@import url("styles/topicos.css");
-@import url("styles/contato.css");
-@import url("styles/rodapé.css");
-
-:root {
-    --cor-de-fundo: #EBECEE;
-    --branco: #FFFFFF;
-    --laranja: #EB9B00;
-    --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
-    --fonte-principal: "Poppins";
-    --azul: #002F52;
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Estilo geral */
 body {
-    background-color: var(--cor-de-fundo);
-    font-family: var(--fonte-principal);
-    font-size: 16px;
-    font-weight: 400;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo da seção hero */
+.hero {
+    background: #4a90e2;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Estilo da seção about */
+.about {
+    padding: 2rem 1rem;
+    background: #fff;
+    text-align: center;
+}
+
+.about img {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+}
+
+/* Estilo da seção services */
+.services {
+    padding: 2rem 1rem;
+    background: #eaeaea;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.service {
+    background: #fff;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo da seção contact */
+.contact {
+    padding: 2rem 1rem;
+    background: #fff;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact label {
+    display: block;
+    margin: 0.5rem 0 0.25rem;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact button {
+    background: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.contact button:hover {
+    background: #357abd;
+}
+
+/* Estilo do rodapé */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
 }
